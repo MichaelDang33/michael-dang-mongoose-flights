@@ -1,0 +1,25 @@
+<%- include("../partials/header") %>
+
+<title> All Flights </title>
+
+<h1> All Flights </h1>
+
+    <ul>
+        <% flights.forEach(function (flight) { %>
+        <li>
+            <h4><u>Airline:</u></h4>
+            <p> <%= flight.airline %> </p>
+
+            <h4><u>Airport:</u></h4>
+            <p> <%= flight.airport %> </p>
+
+            <h4><u>Flight Number:</u></h4>
+            <p> <%= flight.flightNo %> </p>
+
+            <h4><u>Departure:</u></h4>
+            <p> <%= flight.departs %> </p>
+        </li>
+        <% }) %>
+    </ul>
+
+<%- include("../partials/footer") %>
